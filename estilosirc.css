@@ -1,0 +1,169 @@
+/*Código para pantallas de equipos inferores a las */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+body{
+    background-color: black;
+    font-family: 'Overpass', sans-serif;
+}
+.contenedor_main{
+    width: 70%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.seccion_pregunta{
+    background-color: hsl(213, 19%, 18%);
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.img_estrella{
+    width: 35px;
+    height: 35px;
+    background-color: hsl(216, 20%, 25%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+.img_estrella img{
+    width: 14px;
+    height: 14px;
+}
+/*Color de texto para los botonos y titulos...*/
+h1, #boton_submit, #boton_rating{
+    color: hsl(0, 0%, 100%);
+}
+h1{
+    font-weight: 700;
+    font-size: 18px;
+    margin: 16px 0 0 0;
+}
+p{
+    color: hsl(216, 12%, 54%);
+    font-size: 12px;
+    font-weight: 400;
+}
+.marcar_opcion{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 0 16px 0;
+}
+
+.botonuno, .botondos, .botontres, .botoncuatro, .botoncinco{
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    color: hsl(217, 12%, 63%);
+    font-size: 12px;
+    border: none;
+    background-color: hsl(216, 20%, 25%);
+}
+.btn{
+    background-color: hsl(25, 97%, 53%);
+     width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    color: hsl(217, 12%, 63%);
+    font-size: 12px;
+    border: none;
+}
+.botonuno:hover, .botondos:hover, .botontres:hover, .botoncuatro:hover, .botoncinco:hover{
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    font-weight: 700;
+}
+
+#boton_submit{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    color: hsl(0, 0%, 100%);
+    letter-spacing: 2px;
+    font-size: 12px;
+    background-color: hsl(25, 97%, 53%);
+}
+#boton_submit:hover{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+
+.seccion_agradecimiento{
+    background-color: hsl(213, 19%, 18%);
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+.parrafo_agradecimiento{
+    text-align: center;
+}
+.img_encabezado{
+    width: 163px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.img_encabezado img{
+    width: 162px;
+}
+#boton_rating{
+    color: hsl(25, 97%, 53%);
+    border-radius: 20px;
+    border: none;
+    background-color: hsl(216, 20%, 25%);
+    padding: 5px;
+    width: 75%;
+    font-size: 12px;
+}
+#boton_rating:hover{
+    cursor: pointer;
+}
+.attribution { font-size: 11px; text-align: center; color: rgb(227, 230, 233);}
+    .attribution a { color: hsl(225, 12%, 93%); }
+
+    /*Adaptación para equipos con pantalla superior a los 1440px*/
+
+@media screen and (min-width: 1440px){
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .contenedor_main{
+        width: 100%;
+        margin: 0;
+    }
+    .seccion_pregunta{
+        width: 25%;
+        padding: 50px 30px;
+        font-size: 15px;
+    }
+
+    .seccion_agradecimiento{
+        width: 25%;
+        font-size: 15px;
+    }
+p{
+    font-size: 15px;
+}
+
+}
